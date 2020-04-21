@@ -23,6 +23,6 @@ class Student:
         print("Student from " + self.faculty + " deleted")
     
     def __str__(self):
-        return self.first_name + ", " + self.last_name + ", " + str(self.rating) + ", " + str(
-            self.height) + ", " + self.faculty + ", " + self.speciality + ", " + self.sub_speciality + ", " + str(
-            Student.university)
+        return "Information about student: %s, %s, %s, %s, %s, %s, %s, %s" % (
+            self.first_name, self.last_name, str(self.rating), str(self.height), self.faculty, self.speciality,
+            self.sub_speciality, str(Student.university))
